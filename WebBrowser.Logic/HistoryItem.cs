@@ -4,8 +4,7 @@ using System.Text;
 
 namespace WebBrowser.Logic
 {
-    public class HistoryManager
+    class HistoryItem
     {
-
     }
 }
