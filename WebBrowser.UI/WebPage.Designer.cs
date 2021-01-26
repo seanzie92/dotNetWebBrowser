@@ -97,7 +97,7 @@
             this.exitBrowserToolStripMenuItem.Name = "exitBrowserToolStripMenuItem";
             this.exitBrowserToolStripMenuItem.Size = new System.Drawing.Size(252, 30);
             this.exitBrowserToolStripMenuItem.Text = "Exit Browser";
-            
+            this.exitBrowserToolStripMenuItem.Click += new System.EventHandler(this.exitBrowserToolStripMenuItem_Click);
             // 
             // toolsToolStripMenuItem
             // 
@@ -131,7 +131,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(252, 30);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(146, 30);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // WebPage
