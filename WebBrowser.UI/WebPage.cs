@@ -21,5 +21,10 @@ namespace WebBrowser.UI
         {
             this.Close();
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This program was made by Sean Zetterlund. szz0060. Python ftw!");
+        }
     }
 }
