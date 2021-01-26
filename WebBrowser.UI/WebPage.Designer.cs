@@ -97,6 +97,7 @@
             this.exitBrowserToolStripMenuItem.Name = "exitBrowserToolStripMenuItem";
             this.exitBrowserToolStripMenuItem.Size = new System.Drawing.Size(252, 30);
             this.exitBrowserToolStripMenuItem.Text = "Exit Browser";
+            
             // 
             // toolsToolStripMenuItem
             // 
