@@ -26,5 +26,10 @@ namespace WebBrowser.UI
         {
             MessageBox.Show("This program was made by Sean Zetterlund. szz0060. Python ftw!");
         }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate(toolStripTextBox1.Text);
+        }
     }
 }
