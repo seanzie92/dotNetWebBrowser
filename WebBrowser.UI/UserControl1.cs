@@ -17,6 +17,15 @@ namespace WebBrowser.UI
             InitializeComponent();
         }
 
+        private void exitBrowserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This program was made by Sean Zetterlund. szz0060. Python ftw!");
+        }
 
         //navigate function 
         private void NavigateToPage()
