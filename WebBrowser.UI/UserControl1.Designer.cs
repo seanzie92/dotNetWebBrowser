@@ -55,7 +55,7 @@ namespace WebBrowser.UI
             this.toolStripButton6});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1077, 33);
+            this.toolStrip1.Size = new System.Drawing.Size(1375, 33);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -124,10 +124,10 @@ namespace WebBrowser.UI
             this.webBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.webBrowser1.Location = new System.Drawing.Point(0, 36);
+            this.webBrowser1.Location = new System.Drawing.Point(31, 46);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(1074, 675);
+            this.webBrowser1.Size = new System.Drawing.Size(1301, 685);
             this.webBrowser1.TabIndex = 3;
             // 
             // UserControl1
@@ -137,7 +137,7 @@ namespace WebBrowser.UI
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.toolStrip1);
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(1077, 714);
+            this.Size = new System.Drawing.Size(1375, 714);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
