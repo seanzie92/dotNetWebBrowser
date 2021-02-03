@@ -17,16 +17,10 @@ namespace WebBrowser.UI
             InitializeComponent();
         }
 
-        //navigate function 
-        private void NavigateToPage()
-        {
-            webBrowser1.Navigate(toolStripTextBox1.Text);
-        }
-
         //press go to navigate to url
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
-            NavigateToPage();
+            webBrowser1.Navigate(toolStripTextBox1.Text);
         }
 
         //keypress enter for url
@@ -34,7 +28,7 @@ namespace WebBrowser.UI
         {
             if (e.KeyChar == (char)ConsoleKey.Enter)
             {
-                NavigateToPage();
+                webBrowser1.Navigate(toolStripTextBox1.Text);
             }
         }
     }
