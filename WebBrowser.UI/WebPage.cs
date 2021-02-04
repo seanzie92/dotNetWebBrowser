@@ -35,5 +35,10 @@ namespace WebBrowser.UI
             newTabControl.Dock = DockStyle.Fill;
             newTabPage.Controls.Add(newTabControl);
         }
+
+        private void closeCurrentTabToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tabControl1.TabPages.Remove(tabControl1.SelectedTab);
+        }
     }
 }
