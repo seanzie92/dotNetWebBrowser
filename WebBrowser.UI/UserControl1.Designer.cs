@@ -100,6 +100,7 @@ namespace WebBrowser.UI
             this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox1.Name = "toolStripTextBox1";
             this.toolStripTextBox1.Size = new System.Drawing.Size(880, 33);
+            this.toolStripTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.toolStripTextBox1_KeyPress_1);
             // 
             // Navigate
             // 
@@ -109,6 +110,7 @@ namespace WebBrowser.UI
             this.Navigate.Name = "Navigate";
             this.Navigate.Size = new System.Drawing.Size(34, 28);
             this.Navigate.Text = "toolStripButton5";
+            this.Navigate.Click += new System.EventHandler(this.Navigate_Click);
             // 
             // toolStripButton6
             // 
