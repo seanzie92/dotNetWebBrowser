@@ -42,7 +42,14 @@ namespace WebBrowser.UI
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
+            forwardLinks.Push(webBrowser1.Url.ToString());
+            webBrowser1.GoBack();
+        }
 
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            backwardLinks.Push(webBrowser1.Url.ToString());
+            webBrowser1.GoBack();
         }
     }
 }
