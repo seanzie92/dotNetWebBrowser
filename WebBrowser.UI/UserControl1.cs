@@ -39,5 +39,10 @@ namespace WebBrowser.UI
         {
             webBrowser1.Refresh();
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
