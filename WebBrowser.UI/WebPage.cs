@@ -27,5 +27,13 @@ namespace WebBrowser.UI
             MessageBox.Show("This program was made by Sean Zetterlund. szz0060. Python ftw!");
         }
 
+        private void newTabToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TabPage newTabPage = new TabPage("New Tab");
+            tabControl1.TabPages.Add(newTabPage);
+            UserControl1 newTabControl = new UserControl1();
+            newTabControl.Dock = DockStyle.Fill;
+            newTabPage.Controls.Add(newTabControl);
+        }
     }
 }
