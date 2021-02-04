@@ -17,7 +17,9 @@ namespace WebBrowser.UI
         {
             InitializeComponent();
         }
-        
+
+        public Stack<string> forwardLinks = new Stack<string>();
+        public Stack<string> backwardLinks = new Stack<string>();
 
         private void Navigate_Click(object sender, EventArgs e)
         {
