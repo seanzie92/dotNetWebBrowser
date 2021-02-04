@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace WebBrowser.UI
 {
+
     public partial class UserControl1 : UserControl
     {
         public UserControl1()
@@ -29,6 +30,11 @@ namespace WebBrowser.UI
             {
                 webBrowser1.Navigate(toolStripTextBox1.Text);
             }
+
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
 
         }
     }
