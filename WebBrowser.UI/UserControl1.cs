@@ -35,7 +35,7 @@ namespace WebBrowser.UI
 
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
-
+            webBrowser1.Refresh();
         }
     }
 }
