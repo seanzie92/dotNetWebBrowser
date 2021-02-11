@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BookmarkItem.cs" />
+    <Compile Include="BookmarkItemManager.cs" />
     <Compile Include="HistoryItem.cs" />
+    <Compile Include="HistoryItemManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
