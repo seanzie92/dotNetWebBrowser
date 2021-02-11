@@ -29,7 +29,7 @@ namespace Browser.Logic
             return results;
         }
 
-        public void AddHistoryItem(HistoryItem item)
+        public static void AddHistoryItem(HistoryItem item)
         {
             var adapter = new HistoryTableAdapter();
             adapter.Insert(item.URL, item.Title, item.Date);

@@ -34,6 +34,14 @@ namespace WebBrowser.UI
                 webBrowser1.Navigate(toolStripTextBox1.Text);
             }
 
+            //adds it to history db
+
+            var historyItem = new HistoryItem();
+            historyItem.URL = toolStripTextBox1.Text;
+            historyItem.Title = webBrowser1.DocumentTitle;
+            historyItem.Date = DateTime.Now;
+            HistoryItemManager.AddHistoryItem(historyItem);
+
         }
 
         private void toolStripButton3_Click(object sender, EventArgs e)
