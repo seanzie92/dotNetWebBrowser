@@ -9,7 +9,7 @@ namespace Browser.Logic
 {
     public class BookmarkItemManager
     {
-        public void AddBookmarkItem(BookmarkItem item)
+        public static void AddBookmarkItem(BookmarkItem item)
         {
             var adapter = new BookmarkTableAdapter();
             adapter.Insert(item.URL, item.Title);

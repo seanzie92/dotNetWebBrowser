@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Browser.Logic;
 
 namespace WebBrowser.UI
 {
@@ -50,6 +51,14 @@ namespace WebBrowser.UI
         {
             backwardLinks.Push(webBrowser1.Url.ToString());
             webBrowser1.GoBack();
+        }
+
+        private void toolStripButton6_Click(object sender, EventArgs e)
+        {
+            var bookmarkItem = new BookmarkItem();
+            bookmarkItem.URL = toolStripTextBox1.Text;
+            bookmarkItem.Title = webBrowser1.DocumentTitle;
+            BookmarkItemManager.AddBookmarkItem(bookmarkItem);
         }
     }
 }
