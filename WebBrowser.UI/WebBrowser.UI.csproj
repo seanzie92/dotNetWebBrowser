@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookmarkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookmarkForm.Designer.cs">
+      <DependentUpon>BookmarkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoryForm.Designer.cs">
+      <DependentUpon>HistoryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserControl1.cs">
@@ -60,6 +72,12 @@
     <Compile Include="WebPage.Designer.cs">
       <DependentUpon>WebPage.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BookmarkForm.resx">
+      <DependentUpon>BookmarkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoryForm.resx">
+      <DependentUpon>HistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

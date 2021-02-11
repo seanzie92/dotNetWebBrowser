@@ -8,19 +8,25 @@ using System.Threading.Tasks;
 
 namespace Browser.Logic
 {
-    class HistoryItemManager
+    public class HistoryItemManager
     {
-        public List<HistoryItem> GetItems()
+        public static List<HistoryItem> GetItems()
         {
-            var result = new List<HistoryItem>();
             var adapter = new HistoryTableAdapter();
+            var results = new List<HistoryItem>();
+            var rows = adapter.GetData();
 
-            foreach(var row in adapter.GetData())
+            foreach (var row in rows)
             {
-                result.Add(new HistoryItem() { URL = row.URL, Title = row.Title, Date = row.Date });
-            }
+                var item = new HistoryItem();
+                item.URL = row.URL;
+                item.Title = row.Title;
+                item.Date = row.Date;
+                
 
-            return result;
+                results.Add(item);
+            }
+            return results;
         }
 
         public void AddHistoryItem(HistoryItem item)

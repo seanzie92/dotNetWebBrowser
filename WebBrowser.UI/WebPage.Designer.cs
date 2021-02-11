@@ -121,12 +121,14 @@
             this.manageHistoryToolStripMenuItem.Name = "manageHistoryToolStripMenuItem";
             this.manageHistoryToolStripMenuItem.Size = new System.Drawing.Size(272, 34);
             this.manageHistoryToolStripMenuItem.Text = "Manage History ";
+            this.manageHistoryToolStripMenuItem.Click += new System.EventHandler(this.manageHistoryToolStripMenuItem_Click);
             // 
             // manageBookmarksToolStripMenuItem
             // 
             this.manageBookmarksToolStripMenuItem.Name = "manageBookmarksToolStripMenuItem";
             this.manageBookmarksToolStripMenuItem.Size = new System.Drawing.Size(272, 34);
             this.manageBookmarksToolStripMenuItem.Text = "Manage Bookmarks";
+            this.manageBookmarksToolStripMenuItem.Click += new System.EventHandler(this.manageBookmarksToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -139,7 +141,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(164, 34);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 

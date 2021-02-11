@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Browser.Logic
 {
-    class BookmarkItemManager
+    public class BookmarkItemManager
     {
         public void AddBookmarkItem(BookmarkItem item)
         {
@@ -15,17 +15,22 @@ namespace Browser.Logic
             adapter.Insert(item.URL, item.Title);
         }
 
-        public List<BookmarkItem> GetItems()
+        public static List<BookmarkItem> GetItems()
         {
-            var result = new List<BookmarkItem>();
             var adapter = new BookmarkTableAdapter();
+            var results = new List<BookmarkItem>();
+            var rows = adapter.GetData();
 
-            foreach (var row in adapter.GetData())
+            foreach (var row in rows)
             {
-                result.Add(new BookmarkItem() { URL = row.URL, Title = row.Title });
-            }
+                var item = new BookmarkItem();
+                item.URL = row.URL;
+                item.Title = row.Title;
+                item.Id = row.Id;
 
-            return result;
+                results.Add(item);
+            }
+            return results;
         }
     }
 }
