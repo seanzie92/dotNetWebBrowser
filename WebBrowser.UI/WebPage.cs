@@ -29,16 +29,21 @@ namespace WebBrowser.UI
 
         private void newTabToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TabPage newTabPage = new TabPage("New Tab");
+            var lastIndex = this.tabControl1.TabCount - 1;
+            TabPage newTabPage = new TabPage();
+            newTabPage.Text = "New Tab";
             tabControl1.TabPages.Add(newTabPage);
             UserControl1 newTabControl = new UserControl1();
             newTabControl.Dock = DockStyle.Fill;
             newTabPage.Controls.Add(newTabControl);
+            
+            
         }
 
         private void closeCurrentTabToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            tabControl1.TabPages.Remove(tabControl1.SelectedTab);
+            
+            tabControl1.SelectedTab.Dispose();
         }
 
         private void manageHistoryToolStripMenuItem_Click(object sender, EventArgs e)
