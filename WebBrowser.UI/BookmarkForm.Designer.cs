@@ -36,9 +36,9 @@ namespace WebBrowser.UI
             // 
             this.bookmarkListBox.FormattingEnabled = true;
             this.bookmarkListBox.ItemHeight = 20;
-            this.bookmarkListBox.Location = new System.Drawing.Point(463, 109);
+            this.bookmarkListBox.Location = new System.Drawing.Point(419, 103);
             this.bookmarkListBox.Name = "bookmarkListBox";
-            this.bookmarkListBox.Size = new System.Drawing.Size(254, 244);
+            this.bookmarkListBox.Size = new System.Drawing.Size(369, 244);
             this.bookmarkListBox.TabIndex = 0;
             // 
             // BookmarkForm

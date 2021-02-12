@@ -36,9 +36,9 @@ namespace WebBrowser.UI
             // 
             this.historyListBox.FormattingEnabled = true;
             this.historyListBox.ItemHeight = 20;
-            this.historyListBox.Location = new System.Drawing.Point(424, 77);
+            this.historyListBox.Location = new System.Drawing.Point(306, 79);
             this.historyListBox.Name = "historyListBox";
-            this.historyListBox.Size = new System.Drawing.Size(320, 264);
+            this.historyListBox.Size = new System.Drawing.Size(482, 304);
             this.historyListBox.TabIndex = 0;
             // 
             // HistoryForm
