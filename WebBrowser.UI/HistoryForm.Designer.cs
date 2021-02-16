@@ -61,6 +61,7 @@ namespace WebBrowser.UI
             this.histSearchButton.TabIndex = 2;
             this.histSearchButton.Text = "Search";
             this.histSearchButton.UseVisualStyleBackColor = true;
+            this.histSearchButton.Click += new System.EventHandler(this.histSearchButton_Click);
             // 
             // histDeleteButton
             // 
@@ -70,6 +71,7 @@ namespace WebBrowser.UI
             this.histDeleteButton.TabIndex = 3;
             this.histDeleteButton.Text = "Delete";
             this.histDeleteButton.UseVisualStyleBackColor = true;
+            this.histDeleteButton.Click += new System.EventHandler(this.histDeleteButton_Click);
             // 
             // histClearButton
             // 
@@ -79,6 +81,7 @@ namespace WebBrowser.UI
             this.histClearButton.TabIndex = 4;
             this.histClearButton.Text = "Clear";
             this.histClearButton.UseVisualStyleBackColor = true;
+            this.histClearButton.Click += new System.EventHandler(this.histClearButton_Click);
             // 
             // HistoryForm
             // 

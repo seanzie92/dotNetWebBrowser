@@ -34,5 +34,31 @@ namespace Browser.Logic
             var adapter = new HistoryTableAdapter();
             adapter.Insert(item.URL, item.Title, item.Date);
         }
+
+        public static void DeleteHist()
+        {
+            var adapter = new HistoryTableAdapter();
+            var rows = adapter.GetData();
+
+            foreach (var row in rows)
+            {
+                adapter.Delete(row.Id, row.URL, row.Title, row.Date);
+            }
+        }
+
+        public static void RemoveHist(string nom)
+        {
+            var adapter = new HistoryTableAdapter();
+            var rows = adapter.GetData();
+            foreach (var row in rows)
+            {
+                string rowChecker = string.Format(string.Format("[{0}] {1} ({2})", row.Date, row.Title, row.URL));
+
+                if (rowChecker == nom)
+                {
+                    adapter.Delete(row.Id, row.URL, row.Title, row.Date);
+                }
+            }
+        }
     }
 }
