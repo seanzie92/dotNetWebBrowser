@@ -44,10 +44,13 @@ namespace WebBrowser.UI
         }
 
         private void histDeleteButton_Click(object sender, EventArgs e)
-        {           
-            string nom = historyListBox.GetItemText(historyListBox.SelectedItem);           
-            HistoryItemManager.RemoveHist(nom);           
-            historyListBox.Items.RemoveAt(historyListBox.SelectedIndex);
+        {
+            if (historyListBox.SelectedIndex >= 0)
+            {
+                string nom = historyListBox.GetItemText(historyListBox.SelectedItem);
+                HistoryItemManager.RemoveHist(nom);
+                historyListBox.Items.RemoveAt(historyListBox.SelectedIndex);
+            }
         }
 
         private void histClearButton_Click(object sender, EventArgs e)
