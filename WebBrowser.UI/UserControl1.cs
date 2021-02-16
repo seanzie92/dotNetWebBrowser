@@ -68,5 +68,27 @@ namespace WebBrowser.UI
             bookmarkItem.Title = webBrowser1.DocumentTitle;
             BookmarkItemManager.AddBookmarkItem(bookmarkItem);
         }
+
+        private void webBrowser1_ProgressChanged(object sender, WebBrowserProgressChangedEventArgs e)
+        {            
+            try
+            {
+                progressBar1.Value = Convert.ToInt32(e.CurrentProgress);
+                progressBar1.Maximum = Convert.ToInt32(e.MaximumProgress);
+            }
+            catch (Exception ex)
+            {
+                // empty for now
+            }
+
+            if (progressBar1.Value < e.MaximumProgress)
+            {
+                statusLabel.Text = "loading..";
+            }
+            else
+            {
+                statusLabel.Text = "done";
+            }
+        }
     }
 }
