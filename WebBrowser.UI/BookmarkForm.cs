@@ -42,9 +42,12 @@ namespace WebBrowser.UI
 
         private void bookDeleteButton_Click(object sender, EventArgs e)
         {
-            string nom = bookmarkListBox.GetItemText(bookmarkListBox.SelectedItem);
-            BookmarkItemManager.DeleteBook(nom);
-            bookmarkListBox.Items.RemoveAt(bookmarkListBox.SelectedIndex);
+            if (bookmarkListBox.SelectedIndex >= 0)
+            {
+                string nom = bookmarkListBox.GetItemText(bookmarkListBox.SelectedItem);
+                BookmarkItemManager.DeleteBook(nom);
+                bookmarkListBox.Items.RemoveAt(bookmarkListBox.SelectedIndex);
+            }
         }
     }
 }
