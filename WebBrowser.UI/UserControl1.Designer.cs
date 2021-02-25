@@ -59,7 +59,7 @@ namespace WebBrowser.UI
             this.toolStripButton6});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1342, 38);
+            this.toolStrip1.Size = new System.Drawing.Size(2013, 57);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -69,7 +69,7 @@ namespace WebBrowser.UI
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(34, 33);
+            this.toolStripButton1.Size = new System.Drawing.Size(34, 52);
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
@@ -79,7 +79,7 @@ namespace WebBrowser.UI
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(34, 33);
+            this.toolStripButton2.Size = new System.Drawing.Size(34, 52);
             this.toolStripButton2.Text = "toolStripButton2";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
@@ -89,7 +89,7 @@ namespace WebBrowser.UI
             this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(34, 33);
+            this.toolStripButton3.Size = new System.Drawing.Size(34, 52);
             this.toolStripButton3.Text = "toolStripButton3";
             this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
@@ -99,14 +99,14 @@ namespace WebBrowser.UI
             this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(34, 33);
+            this.toolStripButton4.Size = new System.Drawing.Size(34, 52);
             this.toolStripButton4.Text = "toolStripButton4";
             // 
             // toolStripTextBox1
             // 
             this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(880, 38);
+            this.toolStripTextBox1.Size = new System.Drawing.Size(880, 57);
             this.toolStripTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.toolStripTextBox1_KeyPress_1);
             // 
             // Navigate
@@ -115,7 +115,7 @@ namespace WebBrowser.UI
             this.Navigate.Image = ((System.Drawing.Image)(resources.GetObject("Navigate.Image")));
             this.Navigate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Navigate.Name = "Navigate";
-            this.Navigate.Size = new System.Drawing.Size(34, 33);
+            this.Navigate.Size = new System.Drawing.Size(34, 52);
             this.Navigate.Text = "toolStripButton5";
             this.Navigate.Click += new System.EventHandler(this.Navigate_Click);
             // 
@@ -125,7 +125,7 @@ namespace WebBrowser.UI
             this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
             this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton6.Name = "toolStripButton6";
-            this.toolStripButton6.Size = new System.Drawing.Size(34, 33);
+            this.toolStripButton6.Size = new System.Drawing.Size(34, 52);
             this.toolStripButton6.Text = "toolStripButton6";
             this.toolStripButton6.Click += new System.EventHandler(this.toolStripButton6_Click);
             // 
@@ -161,8 +161,8 @@ namespace WebBrowser.UI
             // statusLabel
             // 
             this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(134, 25);
-            this.statusLabel.Text = "Progress Status";
+            this.statusLabel.Size = new System.Drawing.Size(164, 25);
+            this.statusLabel.Text = "Progress Status Bar";
             // 
             // UserControl1
             // 
