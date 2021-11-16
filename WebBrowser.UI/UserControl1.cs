@@ -83,11 +83,11 @@ namespace WebBrowser.UI
 
             if (progressBar1.Value < e.MaximumProgress)
             {
-                statusLabel.Text = "loading..";
+                statusLabel.Text = "Loading..";
             }
             else
             {
-                statusLabel.Text = "done";
+                statusLabel.Text = "Done";
             }
         }
     }
