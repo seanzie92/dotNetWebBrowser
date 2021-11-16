@@ -25,7 +25,7 @@ namespace WebBrowser.UI
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This program was made by Sean Zetterlund. szz0060. Python ftw!");
+            MessageBox.Show("This program was made by Sean Zetterlund for a course. Will add more in the future!");
         }
 
         private void newTabToolStripMenuItem_Click(object sender, EventArgs e)
@@ -61,7 +61,7 @@ namespace WebBrowser.UI
 
         private void clearHistoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string message = "Do you want to clear history, bruh?";
+            string message = "Do you want to clear history?";
             var confirmBox = MessageBox.Show(message, "Whoa there",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (confirmBox == DialogResult.Yes)
